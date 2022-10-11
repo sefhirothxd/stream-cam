@@ -11,7 +11,7 @@ const ip = process.env.CAM_IP;
 const { proxy, scriptUrl } = require("rtsp-relay")(app);
 // app.use(cors);
 const handler = proxy({
-  url: `rtsp://${user}:${pass}@${ip}:554/Streaming/Channels/1`,
+  url: `rtsp://admin:MGQUQC@192.168.4.185:554/Streaming/Channels/1`,
   // if your RTSP stream need credentials, include them in the URL as above
   verbose: false,
 });
